@@ -298,6 +298,8 @@
     <script>scripts\scr_objdepth.gml</script>
     <script>scripts\scr_battlecollision.gml</script>
     <script>scripts\scr_rmmove.gml</script>
+    <script>scripts\scr_rmt.gml</script>
+    <script>scripts\scr_rms.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Font_YuGothic</font>

@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-99999</depth>
-  <persistent>-1</persistent>
+  <depth>0</depth>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,14 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.pause=false
-paused=false
-scrn=-1
-drawpause=false
-x = -999
-y = -999
-global.nort=false
-nort=-1
+            <string>drawtest=false
+alarm[1]=2
+global.lines+=1
+selfline = global.lines
 </string>
           </argument>
         </arguments>
@@ -55,16 +51,9 @@ nort=-1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if drawpause=true {
-    drawpause=false
-    alarm[1]=40
-    exit
-}
-if drawpause=false {
-    drawpause=true
-    alarm[1]=40
-    exit
-}
+            <string>checkx = obj_player.x
+checky = obj_player.y
+drawtest=true
 </string>
           </argument>
         </arguments>
@@ -87,15 +76,15 @@ if drawpause=false {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>window_set_caption(string(fps))
-scr_gotoroom() //delete this later
-scr_pause()
+            <string>if global.linelagger&gt;=selfline {
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
+    <event eventtype="8" enumb="73">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -112,44 +101,10 @@ scr_pause()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if scrn!=-1 {
-    draw_sprite(scrn,1,0,0)
-    //sprite_save(scrn,1,"skunky.png")
-    draw_sprite_stretched_ext(spr_paused,1,0,0,view_wview*4,view_hview*3,c_black,50)
-}
-
-if drawpause=true {
-    draw_set_font(fnt_pause)
-    draw_set_valign(fa_center)
-    draw_set_halign(fa_center)
-    draw_set_color(c_white)
-    draw_text(320*1.5,150,"P A U S E D")
-    draw_set_color(c_black)
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="66">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if keyboard_check_pressed(ord("B")) {
-    room_goto(rm_battleroom)
+            <string>if drawtest=true {
+//draw_self()
+draw_set_color(c_aqua)
+draw_line_width(x,y,checkx,checky,2)
 }
 </string>
           </argument>

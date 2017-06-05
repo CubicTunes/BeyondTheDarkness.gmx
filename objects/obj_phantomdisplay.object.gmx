@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
-  <persistent>0</persistent>
+  <depth>-999999999</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,14 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=0
-scr_objdepth()
+            <string>if instance_number(obj_phantomdisplay) &gt; 1 {
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,11 +50,17 @@ scr_objdepth()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha-=0.14 //0.09
-//image_xscale-=0.02
-//image_yscale-=0.02
-if image_alpha &lt;= 0 {
-    instance_destroy()
+            <string>if global.nort=false and room!=obj_mastercontrol.nort {
+if instance_exists(obj_player) and obj_player.movespeed &gt; 1 {
+    mydepth=depth
+    depth=-99999999
+    draw_sprite_stretched_ext(spr_trans,0,view_xview,view_yview,view_xview+view_wview,view_yview+view_hview,c_white,20)
+    depth=mydepth
+}
+} else {
+if instance_exists(obj_player) and obj_player.movespeed &gt; 1 {
+    effect_create_below(ef_spark,obj_player.x,obj_player.y,0.1,c_aqua)
+}
 }
 </string>
           </argument>

@@ -263,6 +263,8 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_overlay</sprite>
+    <sprite>sprites\spr_trans</sprite>
+    <sprite>sprites\spr_paused</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Terrain">
@@ -311,10 +313,14 @@
     <script>scripts\scr_rmt.gml</script>
     <script>scripts\scr_rms.gml</script>
     <script>scripts\scr_battlescript.gml</script>
+    <script>scripts\scr_gotoroom.gml</script>
+    <script>scripts\scr_pause.gml</script>
+    <script>scripts\scr_nort.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Font_YuGothic</font>
     <font>fonts\Font__HP</font>
+    <font>fonts\fnt_pause</font>
   </fonts>
   <objects name="objects">
     <objects name="Objects-Sprites">
@@ -399,6 +405,8 @@
     <object>objects\obj_player</object>
     <object>objects\obj_tempenemy</object>
     <object>objects\obj_dashphantom</object>
+    <object>objects\obj_phantomdisplay</object>
+    <object>objects\obj_nortline</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Rooms-Fantasy">

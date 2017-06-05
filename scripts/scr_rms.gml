@@ -1,4 +1,4 @@
-///scr_rmt(xpos,ypos,targetx,targety,room,radius)
+///scr_rms(xpos,ypos,targetx,targety,room,radius)
 xpos = argument0
 ypos = argument1
 targetx = argument2

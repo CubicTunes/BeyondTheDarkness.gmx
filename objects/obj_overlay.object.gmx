@@ -29,7 +29,7 @@
 mode="increase"
 image_alpha = 0.01
 image_blend=c_dkgray
-alarm[1] = 120+30
+alarm[1] = 120+90
 </string>
           </argument>
         </arguments>
@@ -84,6 +84,7 @@ room_goto(rm_battleroom)
 mode="decrease"
 image_blend=c_white
 alarm[2] = 160
+scr_battlescript()
 </string>
           </argument>
         </arguments>

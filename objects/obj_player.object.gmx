@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>movespeed=1
+            <string>global.myhp[1]=37
+global.myhp[2]=54
+global.myhp[3]=666
+global.myhp[4]=999
+
+movespeed=1
 sprite_index=Spr_Luna
 image_speed=0
 image_index=0

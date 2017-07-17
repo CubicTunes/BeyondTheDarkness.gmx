@@ -76,7 +76,10 @@ image_speed = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if room = rm_battleroom {
+    image_speed = 0.06
+}
+</string>
           </argument>
         </arguments>
       </action>

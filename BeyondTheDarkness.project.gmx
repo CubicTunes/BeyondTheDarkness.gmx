@@ -327,11 +327,13 @@
     <script>scripts\scr_gotoroom.gml</script>
     <script>scripts\scr_pause.gml</script>
     <script>scripts\scr_nort.gml</script>
+    <script>scripts\scr_actionmenu.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Font_YuGothic</font>
     <font>fonts\Font__HP</font>
     <font>fonts\fnt_pause</font>
+    <font>fonts\fnt_hpcount</font>
   </fonts>
   <objects name="objects">
     <objects name="Objects-Sprites">

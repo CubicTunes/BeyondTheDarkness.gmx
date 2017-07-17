@@ -272,6 +272,9 @@
         <sprite>sprites\Spr_RoadMiddle6</sprite>
         <sprite>sprites\Spr_RoadMiddle7</sprite>
       </sprites>
+      <sprites name="Fonts">
+        <sprite>sprites\Spr_Numbers</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_overlay</sprite>
     <sprite>sprites\spr_trans</sprite>
@@ -404,6 +407,7 @@
       <object>objects\Obj_PauseMenu</object>
       <object>objects\Obj_Projectile</object>
       <object>objects\Obj_BattleStatTab</object>
+      <object>objects\Obj_Numbers</object>
       <object>objects\Obj_BattleAwakenBar</object>
       <objects name="Damage Objects">
         <object>objects\Obj_Damage</object>

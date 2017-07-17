@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.pause=false
+            <string>global.statid=1
+global.pause=false
 paused=false
 scrn=-1
 drawpause=false

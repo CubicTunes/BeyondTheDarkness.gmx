@@ -19,18 +19,21 @@ global.animmax=12+3
 y-=movespeed
 lastpos="up"
 }
+
 if keyboard_check(ord("S"))  and place_free(x,y+movespeed) or keyboard_check(vk_down) and place_free(x,y+movespeed){
 global.animmin=0
 global.animmax=0+3
 y+=movespeed
 lastpos="down"
 }
+
 if keyboard_check(ord("A"))  and place_free(x-movespeed,y) or keyboard_check(vk_left) and place_free(x-movespeed,y){
 global.animmin=4
 global.animmax=4+3
 x-=movespeed
 lastpos="left"
 }
+
 if keyboard_check(ord("D"))  and place_free(x+movespeed,y) or keyboard_check(vk_right) and place_free(x+movespeed,y){
 global.animmin=8
 global.animmax=8+3
@@ -38,7 +41,7 @@ x+=movespeed
 lastpos="right"
 }
 
-if keyboard_check(ord("W"))=false and keyboard_check(ord("S"))=false and keyboard_check(ord("A"))=false and keyboard_check(ord("D"))=false and keyboard_check(vk_up)=false and keyboard_check(vk_down)=false and keyboard_check(vk_left)=false and keyboard_check(vk_right)=false {
+if keyboard_check(vk_left) and keyboard_check(vk_right) or keyboard_check(vk_up) and keyboard_check(vk_down) or keyboard_check(ord("A")) and keyboard_check(ord("D")) or keyboard_check(ord("W")) and keyboard_check(ord("S")) or keyboard_check(ord("W"))=false and keyboard_check(ord("S"))=false and keyboard_check(ord("A"))=false and keyboard_check(ord("D"))=false and keyboard_check(vk_up)=false and keyboard_check(vk_down)=false and keyboard_check(vk_left)=false and keyboard_check(vk_right)=false {
 if lastpos = "up" {
 image_index=12
 }

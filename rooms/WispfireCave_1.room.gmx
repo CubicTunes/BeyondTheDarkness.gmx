@@ -316,6 +316,7 @@
     <instance objName="Obj_WallCaveUp" x="448" y="640" name="inst_4CB6BAAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallCaveUp" x="416" y="640" name="inst_FE14D3FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallCaveUp" x="256" y="736" name="inst_EF2B159F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_Ladder" x="352" y="0" name="inst_6F5AFD11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

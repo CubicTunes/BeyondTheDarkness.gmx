@@ -9,7 +9,7 @@
     <sound>sound\SFX_PlayerDamage</sound>
   </sounds>
   <sprites name="sprites">
-    <sprites name="Sprites-Player Sprites">
+    <sprites name="Sprites-Character Sprites">
       <sprites name="Past">
         <sprites name="Tohru-Past">
           <sprite>sprites\Spr_Tohru</sprite>
@@ -125,23 +125,33 @@
         </sprites>
         <sprites name="Water/Ice World">
           <sprite>sprites\Spr_Celia</sprite>
-          <sprite>sprites\Spr_Nyu</sprite>
           <sprite>sprites\Spr_Fuuka</sprite>
+          <sprites name="Support">
+            <sprite>sprites\Spr_Nyu</sprite>
+          </sprites>
         </sprites>
         <sprites name="Fire World">
           <sprite>sprites\Spr_Akira</sprite>
-          <sprite>sprites\Spr_Noah</sprite>
+          <sprites name="Support">
+            <sprite>sprites\Spr_Noah</sprite>
+          </sprites>
         </sprites>
         <sprites name="Wind World">
           <sprite>sprites\Spr_Arisa</sprite>
+          <sprites name="Support">
+            <sprite>sprites\Spr_Taylor</sprite>
+          </sprites>
         </sprites>
         <sprites name="Earth/Thunder World">
           <sprite>sprites\Spr_Io</sprite>
           <sprite>sprites\Spr_Sakuya</sprite>
         </sprites>
         <sprites name="Amber/Luna-Rift">
-          <sprite>sprites\Spr_Amber</sprite>
+          <sprite>sprites\Spr_Luna</sprite>
         </sprites>
+      </sprites>
+      <sprites name="Cross">
+        <sprite>sprites\Spr_Tori</sprite>
       </sprites>
     </sprites>
     <sprites name="Sprites-NPC Sprites">
@@ -207,6 +217,7 @@
           <sprite>sprites\Spr_GrassDoorUp</sprite>
           <sprite>sprites\Spr_WispfireDoorDown</sprite>
           <sprite>sprites\Spr_WispfireLadderDown</sprite>
+          <sprite>sprites\Spr_Ladder</sprite>
           <sprite>sprites\Spr_GrassDoorDown</sprite>
           <sprite>sprites\Spr_WFVillageDoor</sprite>
           <sprite>sprites\Spr_WFDoorDark</sprite>
@@ -381,6 +392,7 @@
       <object>objects\Obj_GrassDoorUp</object>
       <object>objects\Obj_WispfireDoorDown</object>
       <object>objects\Obj_WispfireLadderDown</object>
+      <object>objects\Obj_Ladder</object>
       <object>objects\Obj_GrassDoorDown</object>
     </objects>
     <objects name="Objects-Miscellaneous">

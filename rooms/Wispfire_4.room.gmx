@@ -66,7 +66,6 @@
     <instance objName="Obj_WallWispfireTreeL" x="192" y="320" name="inst_4E309966" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="160" y="320" name="inst_C49B6985" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="128" y="320" name="inst_FAAEA715" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_WallWispfireTreeL" x="96" y="320" name="inst_0045D72D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="64" y="320" name="inst_CC643A25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="0" y="288" name="inst_D069E4FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="256" y="0" name="inst_74F492EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -79,7 +78,6 @@
     <instance objName="Obj_WallWispfireTreeL" x="608" y="32" name="inst_5385C8FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="608" y="128" name="inst_B3178123" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="224" y="128" name="inst_49E035B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_WallWispfireTreeL" x="224" y="160" name="inst_550953BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="384" y="224" name="inst_CE48BA5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="512" y="192" name="inst_27628589" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="512" y="224" name="inst_036918CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -114,7 +112,6 @@
     <instance objName="Obj_WallWispfireTreeD" x="384" y="0" name="inst_3D64048A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeD" x="608" y="96" name="inst_3CB74A65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeD" x="608" y="64" name="inst_00EE2DEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_WallWispfireTreeD" x="384" y="192" name="inst_858B1AC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="352" y="256" name="inst_4148589D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeD" x="320" y="288" name="inst_BCAEB084" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeD" x="576" y="320" name="inst_4BA20FE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -123,8 +120,6 @@
     <instance objName="Obj_WallWispfireTreeD" x="512" y="0" name="inst_E4C87428" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeD" x="480" y="0" name="inst_F32FB1F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_GrassHDoorLeft" x="0" y="128" name="inst_9DC0E502" locked="0" code="new_room = Wispfire_4&#xA;new_x = room_width - 44&#xA;new_y = 138&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mastercontrol" x="96" y="320" name="inst_B8BF8AE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_WallWispfireTreeL" x="480" y="224" name="inst_12999159" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="480" y="192" name="inst_F90CF6FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="512" y="160" name="inst_3EB1FBFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="512" y="128" name="inst_3BE10A11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -151,7 +146,6 @@
     <instance objName="Obj_WallWispfireTreeL" x="64" y="288" name="inst_2C5EDC9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="32" y="288" name="inst_E5003E48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="96" y="128" name="inst_86B02A84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_WallWispfireTreeL" x="96" y="160" name="inst_32C60F07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="352" y="192" name="inst_55F1D7E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="320" y="192" name="inst_E1AE9D8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="320" y="224" name="inst_10E49412" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -170,9 +164,19 @@
     <instance objName="Obj_WispfireDoorUp" x="32" y="0" name="inst_B709C8C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WispfireDoorUp" x="64" y="0" name="inst_F497E159" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WispfireDoorRight" x="608" y="192" name="inst_D99217C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_WispfireLadderDown" x="160" y="128" name="inst_08CE9A92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_WispfireLadderDown" x="160" y="128" name="inst_08CE9A92" locked="0" code="room_goto(WispfireCave_1);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="192" y="96" name="inst_DEFDCFF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="192" y="128" name="inst_8104BE71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_WallWispfireTreeL" x="96" y="320" name="inst_39170D11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_WallWispfireTreeL" x="448" y="32" name="inst_FF28CD44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_WallWispfireTreeL" x="288" y="224" name="inst_39C05EFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_WallWispfireTreeL" x="416" y="288" name="inst_6871032D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_WallWispfireTreeL" x="576" y="288" name="inst_AC807A6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_WallWispfireTreeL" x="576" y="32" name="inst_019CBF58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_WallWispfireTreeL" x="32" y="224" name="inst_5B50E931" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_WallWispfireTreeL" x="128" y="288" name="inst_726DE9AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_WallWispfireTreeL" x="96" y="288" name="inst_59507335" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_WallWispfireTreeL" x="160" y="32" name="inst_B9499ADD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

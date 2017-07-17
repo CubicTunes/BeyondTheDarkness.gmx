@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
-  <colour>16777215</colour>
+  <colour>8421504</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>0</enableViews>
@@ -55,10 +55,10 @@
     <instance objName="Obj_BattleStatTab" x="160" y="288" name="inst_B5A30784" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_BattleStatTab" x="320" y="288" name="inst_0234FC03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_BattleStatTab" x="480" y="288" name="inst_0648A1F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_BattleAwakenBar" x="0" y="256" name="inst_2200D131" locked="0" code="" scaleX="1.60000002384186" scaleY="1.33333337306976" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_BattleAwakenBar" x="160" y="256" name="inst_A1D4F185" locked="0" code="" scaleX="1.60000002384186" scaleY="1.33333337306976" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_BattleAwakenBar" x="320" y="256" name="inst_4775B784" locked="0" code="" scaleX="1.60000002384186" scaleY="1.33333337306976" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_BattleAwakenBar" x="480" y="256" name="inst_21770D4B" locked="0" code="" scaleX="1.60000002384186" scaleY="1.33333337306976" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_BattleAwakenBar" x="32" y="256" name="inst_2200D131" locked="0" code="" scaleX="1.27999997138977" scaleY="1.33333337306976" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_BattleAwakenBar" x="192" y="256" name="inst_A1D4F185" locked="0" code="" scaleX="1.27999997138977" scaleY="1.33333337306976" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_BattleAwakenBar" x="352" y="256" name="inst_4775B784" locked="0" code="" scaleX="1.27999997138977" scaleY="1.33333337306976" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_BattleAwakenBar" x="512" y="256" name="inst_21770D4B" locked="0" code="" scaleX="1.27999997138977" scaleY="1.33333337306976" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

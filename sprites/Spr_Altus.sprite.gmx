@@ -21,5 +21,8 @@
   <height>48</height>
   <frames>
     <frame index="0">images\Spr_Altus_0.png</frame>
+    <frame index="1">images\Spr_Altus_1.png</frame>
+    <frame index="2">images\Spr_Altus_2.png</frame>
+    <frame index="3">images\Spr_Altus_3.png</frame>
   </frames>
 </sprite>

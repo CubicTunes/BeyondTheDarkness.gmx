@@ -102,7 +102,6 @@
     <instance objName="Obj_WallWispfireTreeD" x="32" y="320" name="inst_3EFB3165" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeD" x="512" y="0" name="inst_E4C87428" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeD" x="480" y="0" name="inst_F32FB1F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mastercontrol" x="96" y="320" name="inst_B8BF8AE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="576" y="288" name="inst_12999159" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="544" y="288" name="inst_F90CF6FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="608" y="160" name="inst_3EB1FBFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

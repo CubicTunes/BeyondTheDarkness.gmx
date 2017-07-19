@@ -32,6 +32,7 @@ image_blend=c_dkgray
 alarm[1] = 120+90
 image_xscale+=2
 image_yscale+=2
+global.statid=1
 </string>
           </argument>
         </arguments>

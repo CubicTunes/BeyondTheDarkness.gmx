@@ -258,6 +258,7 @@
         <sprite>sprites\spr_bground1</sprite>
         <sprite>sprites\Spr_BattleStatTab</sprite>
         <sprite>sprites\Spr_BattleAwakenBar</sprite>
+        <sprite>sprites\Spr_TacticsTab</sprite>
       </sprites>
       <sprites name="Tiles">
         <sprite>sprites\Spr_PurpleGrass</sprite>
@@ -408,6 +409,7 @@
       <object>objects\Obj_Projectile</object>
       <object>objects\Obj_BattleStatTab</object>
       <object>objects\Obj_Numbers</object>
+      <object>objects\Obj_TacticsTab</object>
       <object>objects\Obj_BattleAwakenBar</object>
       <objects name="Damage Objects">
         <object>objects\Obj_Damage</object>

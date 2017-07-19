@@ -275,6 +275,7 @@
       </sprites>
       <sprites name="Fonts">
         <sprite>sprites\Spr_Numbers</sprite>
+        <sprite>sprites\Spr_Letters</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_overlay</sprite>

@@ -131,7 +131,7 @@
           </sprites>
         </sprites>
         <sprites name="Fire World">
-          <sprite>sprites\Spr_Akira</sprite>
+          <sprite>sprites\Spr_Yasu</sprite>
           <sprites name="Support">
             <sprite>sprites\Spr_Noah</sprite>
           </sprites>
@@ -259,6 +259,7 @@
         <sprite>sprites\Spr_BattleStatTab</sprite>
         <sprite>sprites\Spr_BattleAwakenBar</sprite>
         <sprite>sprites\Spr_TacticsTab</sprite>
+        <sprite>sprites\Spr_TacticsTab2</sprite>
       </sprites>
       <sprites name="Tiles">
         <sprite>sprites\Spr_PurpleGrass</sprite>
@@ -334,6 +335,7 @@
     <script>scripts\scr_nort.gml</script>
     <script>scripts\scr_actionmenu.gml</script>
     <script>scripts\scr_animate.gml</script>
+    <script>scripts\scr_menu.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Font_YuGothic</font>

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.statid=1
+            <string>global.font=font_add_sprite_ext(Spr_Letters,"ABCDEFGHIJKLMNOPQRSTUVWXYZ@#$%^&amp;",1,1)
+global.statid=1
 global.pause=false
 paused=false
 scrn=-1
@@ -34,6 +35,8 @@ x = -999
 y = -999
 global.nort=false
 nort=-1
+global.xx=0
+global.yy=0
 </string>
           </argument>
         </arguments>
@@ -56,15 +59,25 @@ nort=-1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if drawpause=true {
-    drawpause=false
-    alarm[1]=40
-    exit
+            <string>if instance_exists(Obj_TacticsTab){
+xx=Obj_TacticsTab.x
+yy=Obj_TacticsTab.y
+draw_set_color(c_white)
+draw_set_font(global.font)
+draw_set_valign(fa_top)
+draw_set_halign(fa_left)
+draw_text(xx+18,yy+23,"ATTACK")
+draw_text(xx+22,yy+60,"SKILLS")
+draw_text(xx+20,yy+97,"ITEMS")
+draw_text(xx+98,yy+23,"SYNC")
+draw_set_color(c_yellow)
+draw_text(xx+global.xx,yy+global.yy,"AWAKEN")
+draw_set_color(c_white)
+draw_text(xx+105,yy+97,"FLEE")
+if keyboard_check_pressed(vk_enter){
+    global.xx=real(get_string("xx="+string(global.xx),""))
+    global.yy=real(get_string("yy="+string(global.yy),""))
 }
-if drawpause=false {
-    drawpause=true
-    alarm[1]=40
-    exit
 }
 </string>
           </argument>
@@ -127,12 +140,13 @@ if drawpause=true {
     draw_text(320*1.5,150,"P A U S E D")
     draw_set_color(c_black)
 }
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="66">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -149,8 +163,26 @@ if drawpause=true {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check_pressed(ord("B")) {
-    room_goto(rm_battleroom)
+            <string>if instance_exists(Obj_TacticsTab){
+xx=Obj_TacticsTab.x
+yy=Obj_TacticsTab.y
+draw_set_color(make_color_rgb(192,192,192))
+draw_set_font(global.font)
+draw_set_valign(fa_top)
+draw_set_halign(fa_left)
+draw_text(xx+18,yy+23,"@ATTACK")
+draw_text(xx+22,yy+60,"#SKILLS")
+draw_text(xx+20,yy+97,"$ITEMS")
+draw_text(xx+98,yy+23,"%SYNC")
+yl=make_color_rgb(255,255,192)
+draw_set_color(yl)
+draw_text(xx+100,yy+60,"^AWAKEN")
+draw_set_color(make_color_rgb(192,192,192))
+draw_text(xx+105,yy+97,"&amp;FLEE")
+if keyboard_check_pressed(vk_enter){
+    global.xx=real(get_string("xx="+string(global.xx),""))
+    global.yy=real(get_string("yy="+string(global.yy),""))
+}
 }
 </string>
           </argument>

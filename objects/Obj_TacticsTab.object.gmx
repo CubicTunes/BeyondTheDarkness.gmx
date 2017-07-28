@@ -26,13 +26,17 @@
           <argument>
             <kind>1</kind>
             <string>menu="main"
-mup[1]="ATTACK"
-mup[2]="SKILLS"
-mup[3]="ITEMS"
-mup[4]="SYNC"
-mup[5]="AWAKEN"
-mup[6]="FLEE"
+mup[1]=",ATTACK"
+mup[2]=".SKILLS"
+mup[3]="/ITEMS"
+mup[4]="&lt;SYNC"
+mup[5]="&gt;AWAKEN"
+mup[6]="?FLEE"
 msel=1
+mmin=1
+mmax=6
+
+image_xscale=1.08
 </string>
           </argument>
         </arguments>
@@ -62,10 +66,18 @@ msel=6
 }
 }
 if keyboard_check_pressed(vk_right) {
-msel+=3
+    if msel&lt;=mmax/2 {
+        msel+=mmax/2
+    } else {
+        msel-=mmax/2
+    }
 }
 if keyboard_check_pressed(vk_left) {
-msel-=3
+    if msel&gt;mmax/2 {
+        msel-=mmax/2
+    } else {
+        msel+=mmax/2
+    }
 }
 if keyboard_check_pressed(vk_down) {
 msel+=1

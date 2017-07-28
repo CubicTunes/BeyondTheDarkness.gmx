@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.font=font_add_sprite_ext(Spr_Letters,"ABCDEFGHIJKLMNOPQRSTUVWXYZ@#$%^&amp;",1,1)
+            <string>global.font=font_add_sprite_ext(Spr_Letters,"ABCDEFGHIJKLMNOPQRSTUVWXYZ,./&lt;&gt;?",1,2)
+global.gray=make_color_rgb(192,192,192)
 global.statid=1
 global.pause=false
 paused=false
@@ -170,15 +171,15 @@ draw_set_color(make_color_rgb(192,192,192))
 draw_set_font(global.font)
 draw_set_valign(fa_top)
 draw_set_halign(fa_left)
-draw_text(xx+18,yy+23,"@ATTACK")
-draw_text(xx+22,yy+60,"#SKILLS")
-draw_text(xx+20,yy+97,"$ITEMS")
-draw_text(xx+98,yy+23,"%SYNC")
-yl=make_color_rgb(255,255,192)
-draw_set_color(yl)
-draw_text(xx+100,yy+60,"^AWAKEN")
-draw_set_color(make_color_rgb(192,192,192))
-draw_text(xx+105,yy+97,"&amp;FLEE")
+//draw_text(xx+18,yy+23,"@ATTACK")
+//draw_text(xx+22,yy+60,"#SKILLS")
+//draw_text(xx+20,yy+97,"$ITEMS")
+//draw_text(xx+98,yy+23,"%SYNC")
+//draw_text(xx+100,yy+60,"^AWAKEN")
+//draw_text(xx+105,yy+97,"&amp;FLEE")
+
+scr_menu()
+
 if keyboard_check_pressed(vk_enter){
     global.xx=real(get_string("xx="+string(global.xx),""))
     global.yy=real(get_string("yy="+string(global.yy),""))

@@ -183,6 +183,7 @@
     <instance objName="Obj_WallWispfireTreeL" x="256" y="256" name="inst_6A868784" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_WallWispfireTreeL" x="96" y="288" name="inst_C6715B34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_EnemySlime" x="160" y="224" name="inst_6625C550" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_IceSkill" x="96" y="160" name="inst_28F0B197" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

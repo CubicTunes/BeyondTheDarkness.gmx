@@ -259,7 +259,8 @@
         <sprite>sprites\Spr_BattleStatTab</sprite>
         <sprite>sprites\Spr_BattleAwakenBar</sprite>
         <sprite>sprites\Spr_TacticsTab</sprite>
-        <sprite>sprites\Spr_TacticsTab2</sprite>
+        <sprite>sprites\Spr_NotAwakenTab</sprite>
+        <sprite>sprites\Spr_IceSkill</sprite>
       </sprites>
       <sprites name="Tiles">
         <sprite>sprites\Spr_PurpleGrass</sprite>
@@ -414,18 +415,18 @@
       <object>objects\Obj_BattleStatTab</object>
       <object>objects\Obj_Numbers</object>
       <object>objects\Obj_TacticsTab</object>
+      <object>objects\Obj_NotAwakenTab</object>
       <object>objects\Obj_BattleAwakenBar</object>
       <objects name="Damage Objects">
         <object>objects\Obj_Damage</object>
         <object>objects\Obj_2Damage</object>
         <object>objects\Obj_8Damage</object>
       </objects>
+      <object>objects\Obj_IceSkill</object>
     </objects>
-    <object>objects\Obj_Bullet</object>
     <object>objects\obj_ground</object>
     <object>objects\obj_mastercontrol</object>
     <object>objects\obj_animmaster</object>
-    <object>objects\Obj_Akari</object>
     <object>objects\obj_player</object>
     <object>objects\obj_tempenemy</object>
     <object>objects\obj_dashphantom</object>

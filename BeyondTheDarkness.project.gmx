@@ -337,6 +337,7 @@
     <script>scripts\scr_actionmenu.gml</script>
     <script>scripts\scr_animate.gml</script>
     <script>scripts\scr_menu.gml</script>
+    <script>scripts\scr_mselections.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Font_YuGothic</font>
@@ -415,7 +416,6 @@
       <object>objects\Obj_BattleStatTab</object>
       <object>objects\Obj_Numbers</object>
       <object>objects\Obj_TacticsTab</object>
-      <object>objects\Obj_NotAwakenTab</object>
       <object>objects\Obj_BattleAwakenBar</object>
       <objects name="Damage Objects">
         <object>objects\Obj_Damage</object>

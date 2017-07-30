@@ -91,6 +91,29 @@ msel=1
 if msel&gt;6 {
 msel=6
 }
+
+if menu = "main" {
+sprite_index = Spr_TacticsTab
+mup[1]=",ATTACK"
+mup[2]=".SKILLS"
+mup[3]="/ITEMS"
+mup[4]="&lt;SYNC"
+mup[5]="&gt;AWAKEN"
+mup[6]="?FLEE"
+mmin=1
+mmax=6
+}
+if menu != "main" {
+sprite_index = Spr_NotAwakenTab
+
+msel=0
+mmin=0
+mmax=0
+
+}
+
+
+scr_mselections()
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>test="true"
+            <string>if instance_number(obj_overlay) &gt; 1 {
+    instance_destroy()
+}
+test="true"
 mode="increase"
 image_alpha = 0.01
 image_blend=c_dkgray
@@ -87,7 +90,11 @@ room_goto(rm_battleroom)
 mode="decrease"
 image_blend=c_white
 //alarm[2] = 160
-scr_battlescript()
+if instance_exists(Obj_TacticsTab) {
+    with(Obj_TacticsTab) {
+        scr_battlescript()
+    }
+}
 </string>
           </argument>
         </arguments>

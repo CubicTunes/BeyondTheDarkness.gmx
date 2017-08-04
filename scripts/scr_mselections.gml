@@ -27,6 +27,8 @@ if keyboard_check_pressed(vk_enter) {
             if instance_exists(obj_overlay) {
                 obj_overlay.alarm[2]=1
             }
+            global.enemies=1
+            instance_destroy()
         }
     }
 

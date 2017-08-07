@@ -1,4 +1,42 @@
-if keyboard_check_pressed(vk_enter) {
+if mode="planning" {
+if keyboard_check_pressed(vk_up) {
+msel-=1
+if msel=0 {
+msel=6
+}
+}
+if keyboard_check_pressed(vk_right) {
+    if msel<=mmax/2 {
+        msel+=mmax/2
+    } else {
+        msel-=mmax/2
+    }
+}
+if keyboard_check_pressed(vk_left) {
+    if msel>mmax/2 {
+        msel-=mmax/2
+    } else {
+        msel+=mmax/2
+    }
+}
+if keyboard_check_pressed(vk_down) {
+msel+=1
+if msel=7 {
+msel=1
+}
+}
+if msel<1 {
+msel=1
+}
+if msel>6 {
+msel=6
+}
+}
+
+
+
+if keyboard_check_pressed(vk_enter) and mode="planning" {
+
     sel = string_lower(mup[msel])
     if menu="main" {
     sel = string_copy(sel,2,string_length(sel))
@@ -7,7 +45,8 @@ if keyboard_check_pressed(vk_enter) {
     
     if menu="main" {
         if sel="attack" {
-            
+            mode="selection"
+            exit
         }
         if sel="skills" {
             menu="skills"

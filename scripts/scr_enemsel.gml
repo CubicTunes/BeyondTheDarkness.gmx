@@ -15,13 +15,23 @@ if mode="selection" {
     if keyboard_check_pressed(vk_right) {
         esel+=1
     }
-
+    if keyboard_check_pressed(vk_enter) {
+        mode="gotoplanning"
+        thisobj = global.turnid[global.turn]
+        //show_message(string(thisobj))
+        thisobj.enemselection=global.enemies[esel]
+        esel=0
+        global.turn+=1
+        
+        if global.turn>4 { //SET THIS TO MAX PARTY MEMBERS LATER!!!
+        global.turn=1
+        }
+        exit
+    }
     if esel<1 {
         esel=1
-        //show_message("setting esel to 1")
     }
     if esel>array_length_1d(global.enemies)-1 {
         esel=array_length_1d(global.enemies)-1
-        //show_message("setting esel to max")
     }
 }

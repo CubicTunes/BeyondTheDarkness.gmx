@@ -326,6 +326,7 @@
     </scripts>
     <script>scripts\scr_buldetection.gml</script>
     <script>scripts\scr_shootaction.gml</script>
+    <script>scripts\scr_movement_old.gml</script>
     <script>scripts\scr_movement.gml</script>
     <script>scripts\scr_battlecollision.gml</script>
     <script>scripts\scr_objdepth.gml</script>
@@ -435,6 +436,7 @@
     <object>objects\obj_dashphantom</object>
     <object>objects\obj_phantomdisplay</object>
     <object>objects\obj_nortline</object>
+    <object>objects\obj_levelupdraw</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Rooms-Fantasy">
@@ -483,6 +485,7 @@
         <room>rooms\Desert_1</room>
       </rooms>
     </rooms>
+    <room>rooms\rm_levelupexample</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

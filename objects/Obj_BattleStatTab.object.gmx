@@ -25,11 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_number(Obj_BattleStatTab)=1 {
+            <string>orx = x
+ory = y
+if instance_number(Obj_BattleStatTab)=1 {
 global.statid=1
 }
 myid = global.statid
 global.statid+=1
+
+global.turnid[myid]=id
+enemselection=-1
+
 </string>
           </argument>
         </arguments>
@@ -53,9 +59,14 @@ global.statid+=1
           <argument>
             <kind>1</kind>
             <string>draw_self()
-//Go through the digits in the hp
-//Set those digits to seperate variables
-//Draw them in their correct positions
+
+if instance_exists(Obj_TacticsTab) {
+    if global.turnid[global.turn]=id {
+        y=ory-10
+    } else {
+        y=ory
+    }
+}
 temphp=string(global.myhp[myid])
 
 dnumb=1
@@ -79,6 +90,7 @@ dnumb+=1
 if keyboard_check_pressed(vk_space) {
     show_message(hpslot[1]+hpslot[2]+hpslot[3])
 }
+
 myx = x
 myy = y
 //drawing part of the thing
@@ -86,6 +98,14 @@ draw_sprite(Spr_Numbers,real(hpslot[1]),myx+85,myy+30)
 draw_sprite(Spr_Numbers,real(hpslot[2]),myx+102,myy+30)
 draw_sprite(Spr_Numbers,real(hpslot[3]),myx+119,myy+30)
 
+if enemselection!=-1 {
+    //image_blend=c_ltgray
+    draw_set_color(c_black)
+    draw_set_font(fnt_hpcount)
+    draw_text(x+10,y-30,string(enemselection.myid))
+}
+
+draw_sprite_ext(Spr_BattleAwakenBar,0,myx+sprite_get_width(Spr_BattleStatTab)/2,myy-12,1.4,1.4,0,c_white,1)
 </string>
           </argument>
         </arguments>

@@ -19,7 +19,8 @@ if mode="selection" {
         mode="gotoplanning"
         thisobj = global.turnid[global.turn]
         //show_message(string(thisobj))
-        thisobj.enemselection=global.enemies[esel]
+        //thisobj.enemselection=global.enemies[esel]
+        global.enemies[esel].marks+=global.turnid[global.turn].mydamage
         esel=0
         global.turn+=1
         

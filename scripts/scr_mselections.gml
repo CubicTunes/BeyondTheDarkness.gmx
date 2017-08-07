@@ -33,7 +33,12 @@ msel=6
 }
 }
 
-
+if mode!="planning" {
+    if keyboard_check_pressed(vk_rshift) {
+        mode="planning"
+        esel=0
+    }
+}
 
 if keyboard_check_pressed(vk_enter) and mode="planning" {
 

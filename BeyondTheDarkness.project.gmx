@@ -342,6 +342,7 @@
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_mselections.gml</script>
     <script>scripts\scr_enemsel.gml</script>
+    <script>scripts\scr_recdamage.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Font_YuGothic</font>

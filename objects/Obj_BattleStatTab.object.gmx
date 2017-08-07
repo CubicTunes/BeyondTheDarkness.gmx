@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>orx = x
 ory = y
+
 if instance_number(Obj_BattleStatTab)=1 {
 global.statid=1
 }
@@ -36,6 +37,7 @@ global.statid+=1
 global.turnid[myid]=id
 enemselection=-1
 
+mydamage=1
 </string>
           </argument>
         </arguments>

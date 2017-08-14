@@ -263,6 +263,7 @@
         <sprite>sprites\Spr_IceSkill</sprite>
         <sprite>sprites\Spr_LevelUpScreen</sprite>
         <sprite>sprites\Spr_LevelUp</sprite>
+        <sprite>sprites\Spr_StatIcons</sprite>
       </sprites>
       <sprites name="Tiles">
         <sprite>sprites\Spr_PurpleGrass</sprite>
@@ -297,6 +298,7 @@
       <background>background\bg_lighttilefloor</background>
       <background>background\bg_whitetilefloor</background>
     </backgrounds>
+    <background>background\Spr_ManorSet</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

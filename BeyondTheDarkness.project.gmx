@@ -471,10 +471,7 @@
     <object>objects\obj_nortline</object>
     <object>objects\obj_levelupdraw</object>
     <object>objects\obj_temppause</object>
-<<<<<<< HEAD
-=======
     <object>objects\obj_FS</object>
->>>>>>> refs/remotes/origin/newthing
     <object>objects\obj_battler</object>
   </objects>
   <rooms name="rooms">

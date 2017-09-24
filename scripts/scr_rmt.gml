@@ -12,6 +12,7 @@ if x < 0 or x > room_width or y < 0 or y > room_height {
         room_goto(troom)
         x = targetx
         y = targety
+        instance_create(x,y,obj_FS)
     }
 
 }

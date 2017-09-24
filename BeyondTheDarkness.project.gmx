@@ -469,6 +469,8 @@
     <object>objects\obj_phantomdisplay</object>
     <object>objects\obj_nortline</object>
     <object>objects\obj_levelupdraw</object>
+    <object>objects\obj_temppause</object>
+    <object>objects\obj_battler</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Rooms-Fantasy">

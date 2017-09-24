@@ -179,7 +179,9 @@ draw_set_halign(fa_left)
 //draw_text(xx+105,yy+97,"&amp;FLEE")
 
 if Obj_TacticsTab.mmin!=0 and Obj_TacticsTab.mmax!=0 {
+if Obj_TacticsTab.mode="planning" {
 scr_menu()
+}
 }
 
 }

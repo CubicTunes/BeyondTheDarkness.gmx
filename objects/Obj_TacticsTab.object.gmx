@@ -41,8 +41,6 @@ image_xscale=1.08
 mode="planning"
 esel=0
 alarm[1]=1
-
-
 </string>
           </argument>
         </arguments>
@@ -113,7 +111,8 @@ mode="planning"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if menu = "main" {
+            <string>image_blend=c_white
+if menu = "main" {
 sprite_index = Spr_TacticsTab
 mup[1]=",ATTACK"
 mup[2]=".SKILLS"
@@ -133,10 +132,50 @@ mmax=0
 
 }
 
+if mode="wait" {
+    image_alpha=0
+} else {
+    image_alpha=1
+}
+
+if global.temppause=false {
 scr_enemsel()
 scr_mselections()
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self()
+draw_set_color(c_black)
+draw_set_font(fnt_hpcount)
+global.enemies=0
+for (i=0;i!=instance_number(obj_tempenemy)+1;i=i) {
+    global.enemies[i]=instance_find(obj_tempenemy,i-1)
+    i++
+}
 
-
+for (ix=0;ix!=instance_number(obj_tempenemy)+1;ix++) {
+    draw_text(room_width/2,30+ix*30,string(global.enemies[ix]))
+}
 </string>
           </argument>
         </arguments>

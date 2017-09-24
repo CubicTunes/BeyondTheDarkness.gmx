@@ -10,4 +10,5 @@ radius = argument5
         room_goto(troom)
         x = targetx
         y = targety
+        instance_create(x,y,obj_FS)
     }

@@ -31,10 +31,16 @@ image_yscale = 4
 image_speed = 0
 
 marks=0
-myhp=10
+myhp=4
 myid = global.enemcount
 global.enemies[global.enemcount]=id
 global.enemcount+=1
+
+dofade=false
+dalpha=1
+
+randomize()
+stat_speed=irandom_range(1,10)
 </string>
           </argument>
         </arguments>
@@ -57,7 +63,16 @@ global.enemcount+=1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha=1
+            <string>if myhp=0 {
+    myhp=-1
+    instance_create(x,y,obj_temppause)
+    dofade=true
+}
+
+if dalpha&lt;=0 {
+    global.enemies[myid]=-1
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
@@ -103,7 +118,13 @@ global.enemcount+=1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room = rm_battleroom {
+            <string>if global.enemies[myid-1]=-1 {
+    global.enemies[myid]=-1
+    global.enemies[myid-1]=id
+    myid-=1
+}
+
+if room = rm_battleroom {
     image_speed = 0.06
 }
 
@@ -130,10 +151,15 @@ scr_recdamage()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self()
+            <string>draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,image_blend,dalpha)
 draw_set_font(fnt_hpcount)
 draw_set_color(c_white)
 draw_text(x,y,string(myhp))
+
+if dofade=true {
+    dalpha-=0.009
+    global.enemies[myid]=-1
+}
 </string>
           </argument>
         </arguments>

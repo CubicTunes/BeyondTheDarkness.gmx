@@ -208,7 +208,9 @@ game_restart()
           <argument>
             <kind>1</kind>
             <string>if keyboard_check(ord("X")) {
-movespeed=3
+movespeed=1
+yspd=yspd*4
+xspd=xspd*4
 }
 if keyboard_check(ord("X"))=false {
     movespeed=1

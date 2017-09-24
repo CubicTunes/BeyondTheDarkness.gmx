@@ -10,27 +10,37 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="Sprites-Character Sprites">
-      <sprites name="Past">
-        <sprites name="Tohru-Past">
-          <sprite>sprites\Spr_Tohru</sprite>
+      <sprites name="Protagonists">
+        <sprites name="Akari-Fantasy">
+          <sprite>sprites\Spr_Akari</sprite>
+          <sprite>sprites\Spr_Akari64</sprite>
+          <sprite>sprites\Spr_ShadowAkari</sprite>
         </sprites>
-        <sprites name="Shizuku-Past">
-          <sprite>sprites\Spr_Shizuku</sprite>
-        </sprites>
-        <sprites name="Oliver-Past">
-          <sprite>sprites\Spr_Oliver</sprite>
-        </sprites>
-        <sprites name="Arne-Past">
-          <sprite>sprites\Spr_Arne</sprite>
-        </sprites>
-        <sprites name="Angel-Past">
-          <sprite>sprites\Spr_Angel</sprite>
-        </sprites>
-      </sprites>
-      <sprites name="Present">
         <sprites name="Tsukasa-Present">
           <sprite>sprites\Spr_Tsukasa</sprite>
         </sprites>
+        <sprites name="Tohru-Past">
+          <sprite>sprites\Spr_Tohru</sprite>
+        </sprites>
+        <sprites name="Yuki/Shiro-Future">
+          <sprite>sprites\Spr_Yuki</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Fantasy">
+        <sprites name="Yami-Fantasy">
+          <sprite>sprites\Spr_Yami</sprite>
+        </sprites>
+        <sprites name="Amelia-Fantasy">
+          <sprite>sprites\Spr_Amelia</sprite>
+        </sprites>
+        <sprites name="Pathz">
+          <sprite>sprites\Spr_Haiku</sprite>
+          <sprite>sprites\Spr_Altus</sprite>
+          <sprite>sprites\Spr_Leo</sprite>
+          <sprite>sprites\Spr_June</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Present">
         <sprites name="Chiyoko-Present">
           <sprite>sprites\Spr_Chiyoko</sprite>
         </sprites>
@@ -53,10 +63,21 @@
           <sprite>sprites\Spr_Chroma</sprite>
         </sprites>
       </sprites>
-      <sprites name="Future">
-        <sprites name="Yuki/Shiro-Future">
-          <sprite>sprites\Spr_Yuki</sprite>
+      <sprites name="Past">
+        <sprites name="Shizuku-Past">
+          <sprite>sprites\Spr_Shizuku</sprite>
         </sprites>
+        <sprites name="Oliver-Past">
+          <sprite>sprites\Spr_Oliver</sprite>
+        </sprites>
+        <sprites name="Arne-Past">
+          <sprite>sprites\Spr_Arne</sprite>
+        </sprites>
+        <sprites name="Angel-Past">
+          <sprite>sprites\Spr_Angel</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Future">
         <sprites name="Seiko-Future">
           <sprite>sprites\Spr_Seiko</sprite>
           <sprite>sprites\Spr_ScientistSeiko</sprite>
@@ -72,24 +93,6 @@
           <sprite>sprites\Spr_Melody</sprite>
           <sprite>sprites\Spr_Kiseki</sprite>
           <sprite>sprites\Spr_Mari</sprite>
-        </sprites>
-      </sprites>
-      <sprites name="Fantasy">
-        <sprites name="Akari-Fantasy">
-          <sprite>sprites\Spr_Akari</sprite>
-          <sprite>sprites\Spr_ShadowAkari</sprite>
-        </sprites>
-        <sprites name="Yami-Fantasy">
-          <sprite>sprites\Spr_Yami</sprite>
-        </sprites>
-        <sprites name="Amelia-Fantasy">
-          <sprite>sprites\Spr_Amelia</sprite>
-        </sprites>
-        <sprites name="Pathz">
-          <sprite>sprites\Spr_Haiku</sprite>
-          <sprite>sprites\Spr_Altus</sprite>
-          <sprite>sprites\Spr_Leo</sprite>
-          <sprite>sprites\Spr_June</sprite>
         </sprites>
       </sprites>
       <sprites name="Robots">
@@ -253,6 +256,17 @@
         <sprite>sprites\Spr_DialogueBox</sprite>
         <sprite>sprites\Spr_Projectile</sprite>
         <sprite>sprites\spr_plyrshadow</sprite>
+        <sprite>sprites\Spr_UnpassTLC</sprite>
+        <sprite>sprites\Spr_UnpassT</sprite>
+        <sprite>sprites\Spr_UnpassTRC</sprite>
+        <sprite>sprites\Spr_UnpassBLC</sprite>
+        <sprite>sprites\Spr_UnpassB</sprite>
+        <sprite>sprites\Spr_UnpassBRC</sprite>
+        <sprite>sprites\Spr_UnpassableSm</sprite>
+        <sprite>sprites\Spr_UnpassableSm2</sprite>
+        <sprite>sprites\Spr_Passageway</sprite>
+        <sprite>sprites\Spr_EventTrig</sprite>
+        <sprite>sprites\Spr_HPassage</sprite>
       </sprites>
       <sprites name="Battlegrounds">
         <sprite>sprites\spr_bground1</sprite>
@@ -298,7 +312,9 @@
       <background>background\bg_lighttilefloor</background>
       <background>background\bg_whitetilefloor</background>
     </backgrounds>
-    <background>background\Spr_ManorSet</background>
+    <backgrounds name="Tilesets">
+      <background>background\Spr_ManorSet</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -430,6 +446,19 @@
         <object>objects\Obj_8Damage</object>
       </objects>
       <object>objects\Obj_IceSkill</object>
+      <objects name="Indicators">
+        <object>objects\Obj_UnpassTLC</object>
+        <object>objects\Obj_UnpassTRC</object>
+        <object>objects\Obj_UnpassT</object>
+        <object>objects\Obj_UnpassBLC</object>
+        <object>objects\Obj_UnpassBRC</object>
+        <object>objects\Obj_UnpassB</object>
+        <object>objects\Obj_UnpassableSm</object>
+        <object>objects\Obj_UnpassableSm2</object>
+        <object>objects\Obj_Passageway</object>
+        <object>objects\Obj_HPassage</object>
+        <object>objects\Obj_EventTrig</object>
+      </objects>
     </objects>
     <object>objects\obj_ground</object>
     <object>objects\obj_mastercontrol</object>
@@ -444,7 +473,7 @@
   <rooms name="rooms">
     <rooms name="Rooms-Fantasy">
       <rooms name="Rooms-Wispfire Woods">
-        <rooms name="Part 1">
+        <rooms name="Wispfire Woods">
           <room>rooms\Wispfire_1</room>
           <room>rooms\Wispfire_2</room>
           <room>rooms\Wispfire_3</room>
@@ -463,13 +492,18 @@
           <room>rooms\Wispfire_9</room>
           <room>rooms\WispfireCave_1</room>
         </rooms>
-        <rooms name="Part 2">
+        <rooms name="Wispfire Path">
           <room>rooms\Wispfire_10</room>
           <room>rooms\Wispfire_11</room>
         </rooms>
+        <rooms name="Rooms-Safety Areas/Hub Areas">
+          <room>rooms\WispfireVillage_1</room>
+        </rooms>
       </rooms>
-      <rooms name="Rooms-Safety Areas/Hub Areas">
-        <room>rooms\WispfireVillage_1</room>
+      <rooms name="Rooms-Deep Wispfire Woods">
+        <rooms name="Haunted Manor">
+          <room>rooms\Manor_1</room>
+        </rooms>
       </rooms>
     </rooms>
     <rooms name="Rooms-Miscellaneous">

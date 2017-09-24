@@ -62,8 +62,12 @@ if keyboard_check(vk_right) {
 //if keyboard_check(vk_up)=false and keyboard_check(vk_down)=false and keyboard_check(vk_left)=false and keyboard_check(vk_right)=false {
 //
 //}
+if place_free(x+xspd,y){
 x+=xspd
+}
+if place_free(x,y+yspd){
 y+=yspd
+}
 
 if abs(yspd) > abs(xspd) { //setting look position
     if yspd > 0 {

@@ -51,6 +51,12 @@ if keyboard_check_pressed(vk_enter) and mode="planning" {
     if menu="main" {
         if sel="attack" {
             mode="selection"
+            
+            with(global.turnid[global.turn]) {
+                use_skill="attack"
+                use_skill_info=mydamage
+            }
+            
             exit
         }
         if sel="skills" {
@@ -71,7 +77,12 @@ if keyboard_check_pressed(vk_enter) and mode="planning" {
             if instance_exists(obj_overlay) {
                 obj_overlay.alarm[2]=1
             }
-            global.enemies=1
+            if instance_exists(obj_tempenemy) {
+            with(obj_tempenemy) {
+                instance_destroy()
+            }
+            }
+            global.enemies=0
             instance_destroy()
         }
     }

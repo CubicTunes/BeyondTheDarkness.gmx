@@ -285,6 +285,7 @@
     <sprite>sprites\spr_overlay</sprite>
     <sprite>sprites\spr_trans</sprite>
     <sprite>sprites\spr_paused</sprite>
+    <sprite>sprites\sprite142</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Terrain">
@@ -438,6 +439,9 @@
     <object>objects\obj_phantomdisplay</object>
     <object>objects\obj_nortline</object>
     <object>objects\obj_levelupdraw</object>
+    <object>objects\obj_temppause</object>
+    <object>objects\obj_FS</object>
+    <object>objects\obj_battler</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Rooms-Fantasy">

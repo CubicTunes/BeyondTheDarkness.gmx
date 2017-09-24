@@ -24,24 +24,28 @@ if keyboard_check(vk_left)!=keyboard_check(vk_right) or keyboard_check(vk_up)!=k
 }
 scr_animate(minframe,maxframe,0.1)
 if keyboard_check(ord("X")) { //dashing
-    if lastpos="up" {
+    if lastpos="up" and keyboard_check(vk_up) {
         yspd=movespeed*-1.6
         xspd=0
     }
-    if lastpos="down" {
+    if lastpos="down" and keyboard_check(vk_down) {
         yspd=movespeed*1.6
         xspd=0
     }
-    if lastpos="left" {
+    if lastpos="left" and keyboard_check(vk_left) {
         xspd=movespeed*-1.6
         yspd=0
     }
-    if lastpos="right" {
+    if lastpos="right" and keyboard_check(vk_right) {
         xspd=movespeed*1.6
         yspd=0
     }
-    x+=xspd
-    y+=yspd
+    if place_free(x+xspd,y) {
+        x+=xspd
+    }
+    if place_free(x,y+yspd) {
+        y+=yspd
+    }
     exit
 }
 
@@ -62,10 +66,17 @@ if keyboard_check(vk_right) {
 //if keyboard_check(vk_up)=false and keyboard_check(vk_down)=false and keyboard_check(vk_left)=false and keyboard_check(vk_right)=false {
 //
 //}
+<<<<<<< HEAD
 if place_free(x+xspd,y){
 x+=xspd
 }
 if place_free(x,y+yspd){
+=======
+if place_free(x+xspd,y) {
+x+=xspd
+}
+if place_free(x,y+yspd) {
+>>>>>>> refs/remotes/origin/newthing
 y+=yspd
 }
 
